@@ -647,4 +647,38 @@ zokou(
    
         }
     }
+
+
+zokou(
+    {
+        nomCom: 'pavebattlebox',
+        categorie: 'Seabox'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = 'https://telegra.ph/file/7479e1cce556333e5634f.jpg';
+            const msg = `━━━━━━━━━━━
+*ℙ𝔸𝕍𝔼 𝔻𝕌 𝕁𝕆𝕌𝔼𝕌ℝ 🔹*
+━━━━━━
+*Local🔻*:
+                   𝔻𝕀𝕊𝕋𝔸ℕℂ𝔼:0km
+━━━━━━━━
+💬:
+   ━━━━━━   ━━━
+
+👑:
+━━━━━━
+           ━━━━━━━━━
+🎒➤
+
+❤️:100% 🌀:100% 🫀:100%
+🛡:100%
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   
+        }
+    }
+);
 );
