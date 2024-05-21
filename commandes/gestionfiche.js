@@ -736,10 +736,9 @@ zokou(
     }
 );
 
-
 zokou(
     {
-        nomCom: 'pavebox🔹',
+        nomCom: 'pavebox',
         categorie: 'Seabox'
     },
     async (dest, zk, commandeOptions) => {
