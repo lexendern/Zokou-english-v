@@ -686,7 +686,7 @@ zokou(
 
 zokou(
     {
-        nomCom: 'pavebbox',
+        nomCom: 'mapbattlebox🔹',
         categorie: 'Seabox'
     },
     async (dest, zk, commandeOptions) => {
