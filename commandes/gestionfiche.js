@@ -682,3 +682,56 @@ zokou(
         }
     }
 );
+
+
+zokou(
+    {
+        nomCom: 'pavebbox',
+        categorie: ‘Seabox'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = 'https://telegra.ph/file/7479e1cce556333e5634f.jpg';
+            const msg = `░░░░░░━━━━━━
+𝕃𝕆ℂ𝔸𝕃 𝕄𝔸ℙ 𝔹𝔸𝕋𝕋𝕃𝔼 𝔹𝕆𝕏🔹
+       ━━━━░░░░░░░░
+*🔷LAZY LINKS*
+- distance: 10km
+- ⁠zone_desc: une ville abandonnée, avec obstacle pouvant servir d’abris au joueur en cas de tir d’un adversaire.
+░░━━━━
+*🔷LOOT LAKE*
+- distance: 20km
+- ⁠zone_desc: lac avec un grand bateau des temps anciens toujours en parfait étape, des piège ils sont disposer un peu partout, vous pouvez servir des tonneaux pour vous protéger contre les tirs des adversaires.
+░░━━━━
+*🔷DISTY DIVOT*
+- distance: 30km
+- ⁠zone_desc: une tourelles de surveillance en bois parfait pour les sniper’s, au en l’entoure des arbres des arbres 🌳 
+░░━━━━
+*🔷WAILING WARS*
+- distance: 40km
+- ⁠zone_desc: forêt, rien d’autres à part des arbres, mais utilise pour se mettre à couvert.
+░░━━━━
+*🔷RETAIL BLO*
+- distance: 50km
+- ⁠zone_desc: est une zone un tout petit peu bizarre, le soleil se couche plus vite de ce côté parfait pour les sniper un peu d’arbres et des maisons.
+░░━━━━
+*🔷LODGE RAIS*
+- distance: 60km
+- ⁠zone_desc: ville en période d’automne avec un moulin et une petite rivière.
+░░━━━━
+*🔷RISKY MNS*
+- distance: 70km
+- ⁠zone_desc: lieux ouvert avec des pique disant un lieu extraterrestre, pique extrêmement dur pouvant servir comme lieu de protection.
+░░━━━━
+*🔷MOB STERN*
+- distance: 80km
+- ⁠zone_desc: est une zone dimensionnelle très dangereuse ⚠️, un endroit où des monstre on marqué leur territoire.
+░░━━━━
+░░░░░░░░━━━━━━━━━━`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   
+        }
+    }
+);
