@@ -739,8 +739,8 @@ zokou(
 
 zokou(
     {
-        nomCom: 'pavebox',
-        categorie: ‘Seabox'
+        nomCom: 'riskymnsmap🔹',
+        categorie: 'Seabox'
     },
     async (dest, zk, commandeOptions) => {
         const { repondre, arg, ms } = commandeOptions;
@@ -752,6 +752,38 @@ zokou(
            ━━━━━━━━░░░
 - _WARNING⚠️ : les pique on tendance à pousser si il reçoit des dégâts, une repouse de 1m de long et 3m de large._
                          ░░░━━━━━━━`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   
+        }
+    }
+);
+
+
+const { zokou } = require('../framework/zokou');
+
+zokou(
+    {
+        nomCom: 'pavebox🔹',
+        categorie: 'Seabox'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = 'https://telegra.ph/file/e9050ecda6b55fc6cf521.jpg';
+            const msg = `*ℙ𝔸𝕍𝔼 𝔻𝕌 𝕁𝕆𝕌𝔼𝕌ℝ🔻*
+▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨
+*ℕ𝔸𝕄𝔼*:
+▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨
+💬:
+        ◉━━━━━━━━━━◇
+
+👑:
+
+▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨
+*ℙ𝔸𝕍𝔼 𝕊𝔼𝔸 𝔹𝕆𝕏 ℂ𝕆𝕄𝕄𝕌ℕ𝕀𝕋𝕐*
+                  ♲︎    *・・・55%♲︎*
+▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨▨`;
             zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
    
         }
