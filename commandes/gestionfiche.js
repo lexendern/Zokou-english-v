@@ -735,3 +735,25 @@ zokou(
         }
     }
 );
+
+
+zokou(
+    {
+        nomCom: 'pavebox',
+        categorie: ‘Seabox'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = 'https://telegra.ph/file/f70d61f26d6f5e49c25f5.jpg';
+            const msg = `░░░━━━━━━━━
+*🔷RISKY MNS🔹*
+           ━━━━━━━━░░░
+- _WARNING⚠️ : les pique on tendance à pousser si il reçoit des dégâts, une repouse de 1m de long et 3m de large._
+                         ░░░━━━━━━━`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   
+        }
+    }
+);
