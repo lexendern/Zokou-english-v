@@ -78,8 +78,6 @@ zokou(
 );
 
 
-const { zokou } = require('../framework/zokou');
-
 zokou(
     {
         nomCom: 'spawnlazylinks',
