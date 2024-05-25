@@ -28,7 +28,7 @@ zokou(
 
 zokou(
     {
-        nomCom: 'spawn loot lake ',
+        nomCom: 'spawnlootlake',
         categorie: '🔹SEABOX🔹'
     },
     async (dest, zk, commandeOptions) => {
