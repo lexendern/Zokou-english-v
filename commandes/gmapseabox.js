@@ -50,3 +50,29 @@ zokou(
         }
     }
 );
+
+
+zokou(
+    {
+        nomCom: 'spawnriskymns',
+        categorie: '🔹SEABOX🔹'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = 'https://telegra.ph/file/e458f44d5b9f70838a13f.jpg';
+            const msg = `░░░━━━━━━━━━
+🔷𝕃𝕆ℂ𝔸𝕃 𝕊ℙ𝔸𝕎ℕ 𝔹𝔸𝕋𝕋𝕃𝔼 𝔹𝕆𝕏🌐
+             ░░░━━━━━━━━━━━
+*🔹Localisation*: _RISKY MNS_
+    ░░━━━
+*🔹name*: *Jonh smith*
+- *desc*: _Une box 📦 contenant une arme est située à 2km_
+            ░░░━━━━━━━━━━
+░░░━━━━━━━━`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   
+        }
+    }
+);
