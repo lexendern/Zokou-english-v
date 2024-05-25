@@ -26,8 +26,6 @@ zokou(
 );
 
 
-const { zokou } = require('../framework/zokou');
-
 zokou(
     {
         nomCom: 'localretailblo',
@@ -53,8 +51,6 @@ zokou(
     }
 );
 
-
-const { zokou } = require('../framework/zokou');
 
 zokou(
     {
@@ -82,8 +78,6 @@ zokou(
 );
 
 
-const { zokou } = require('../framework/zokou');
-
 zokou(
     {
         nomCom: 'localriskymns',
@@ -110,8 +104,6 @@ zokou(
 );
 
 
-const { zokou } = require('../framework/zokou');
-
 zokou(
     {
         nomCom: 'locallootlake',
@@ -137,8 +129,6 @@ zokou(
     }
 );
 
-
-const { zokou } = require('../framework/zokou');
 
 zokou(
     {
