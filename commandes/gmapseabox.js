@@ -77,22 +77,23 @@ zokou(
     }
 );
 
+
 zokou(
     {
-        nomCom: 'spawnlazylinks',
+        nomCom: 'spawnlodgerais',
         categorie: '🔹SEABOX🔹'
     },
     async (dest, zk, commandeOptions) => {
         const { repondre, arg, ms } = commandeOptions;
 
         if (!arg || arg.length === 0)  {
-            const lien = 'https://telegra.ph/file/cdffd0f45f7fbed1a8a9d.jpg';
-            const msg = `░░░━━━━━━━━━
+            const lien = 'https://telegra.ph/file/5b3fb5e770fbd28b8be2e.jpg';
+            const msg = '░░░━━━━━━━━━
 🔷𝕃𝕆ℂ𝔸𝕃 𝕊ℙ𝔸𝕎ℕ 𝔹𝔸𝕋𝕋𝕃𝔼 𝔹𝕆𝕏🌐
              ░░░━━━━━━━━━━━
-*🔹Localisation*: _LAZY LINKS_
+*🔹Localisation*: _LOGGE RAIS_
     ░░━━━
-*🔹name*: *Yūkunn*
+*🔹name*: *Adorieru D. Kamado VII*
 - *desc*: _Une box 📦 contenant une arme est située à 2km_
             ░░░━━━━━━━━━━
 ░░░━━━━━━━━`;
